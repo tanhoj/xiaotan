@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            width: 600px;
+            height: 500px;
+            display: flex;
+        }
+
+
+        .box1 {
+            background: red;
+        }
+
+        .box2 {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">22</div>
+        <div class="box2">33</div>
+
+    </div>
+    <script>
+        let arr = ['Tom', 'Jerry', 'Potter', 'John']
+        arr.forEach(function fun(value, index, obj) {
+            console.log(value);//Tom
+            console.log(index);//0
+            console.log(obj);//Array(4)
+        })
+        let arr1 = [1, 2]
+        const [a, b] = [1, 2]
+        console.log(b);
+        (function (a, b) { alert(a, b) })(1, 2)
+
+        var reg=new RegExp('^[a-zA-Z]{3}$')
+        alert(reg.test('ABs'));
+      /*    alert(reg.test('foo'))
+         alert(reg.test('123')) */
+         
+    </script>
+</body>
+
+</html>
